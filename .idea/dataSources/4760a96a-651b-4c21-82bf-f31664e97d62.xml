@@ -50,7 +50,7 @@
       <BypassRls>1</BypassRls>
     </role>
     <role id="10" parent="1" name="step_user">
-      <ObjectId>16482</ObjectId>
+      <ObjectId>16458</ObjectId>
       <Inherit>1</Inherit>
       <CanLogin>1</CanLogin>
       <ConnectionLimit>-1</ConnectionLimit>
@@ -75,300 +75,157 @@
     <schema id="16" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-10-20.17:33:24.985</IntrospectionTimestamp>
-      <IntrospectionStateNumber>618</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-10-21.17:27:37.734</IntrospectionTimestamp>
+      <IntrospectionStateNumber>605</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <sequence id="17" parent="16" name="next_id">
-      <ObjectId>16435</ObjectId>
-      <StateNumber>582</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="18" parent="16" name="test_id_seq">
-      <ObjectId>16471</ObjectId>
-      <StateNumber>618</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <sequence id="19" parent="16" name="companies_profit_id_seq">
-      <ObjectId>16455</ObjectId>
-      <StateNumber>587</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <sequence id="20" parent="16" name="countries_id_seq">
-      <ObjectId>16444</ObjectId>
-      <StateNumber>586</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <sequence id="21" parent="16" name="departments_id_seq">
-      <ObjectId>16442</ObjectId>
-      <StateNumber>577</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <table id="22" parent="16" name="companies_profit">
-      <ObjectId>16457</ObjectId>
-      <StateNumber>587</StateNumber>
-    </table>
-    <table id="23" parent="16" name="countries">
-      <ObjectId>16446</ObjectId>
-      <StateNumber>586</StateNumber>
-    </table>
-    <table id="24" parent="16" name="departments">
-      <ObjectId>16444</ObjectId>
-      <StateNumber>577</StateNumber>
-    </table>
-    <table id="25" parent="16" name="employees">
-      <ObjectId>16436</ObjectId>
-      <StateNumber>576</StateNumber>
-    </table>
-    <table id="26" parent="16" name="test">
-      <ObjectId>16473</ObjectId>
-      <StateNumber>618</StateNumber>
-    </table>
-    <table id="27" parent="16" name="users">
-      <ObjectId>16437</ObjectId>
-      <StateNumber>608</StateNumber>
-    </table>
-    <routine id="28" parent="16" name="insert_user">
-      <ObjectId>16466</ObjectId>
-      <StateNumber>602</StateNumber>
-      <VolatilityKind>volatile</VolatilityKind>
-      <ArgumentsDefinition>name character varying, surname character varying, gender boolean</ArgumentsDefinition>
-      <ResultsDefinition>void</ResultsDefinition>
-      <LanguageName>plpgsql</LanguageName>
-      <RoutineKind>function</RoutineKind>
-      <Cost>100.0</Cost>
-    </routine>
-    <routine id="29" parent="16" name="insert_user_2">
+    <sequence id="17" parent="16" name="orders_id_seq">
       <ObjectId>16467</ObjectId>
+      <StateNumber>605</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="18" parent="16" name="persons_id_seq">
+      <ObjectId>16459</ObjectId>
       <StateNumber>604</StateNumber>
-      <VolatilityKind>volatile</VolatilityKind>
-      <ArgumentsDefinition>name character varying, surname character varying, gender boolean</ArgumentsDefinition>
-      <ResultsDefinition>void</ResultsDefinition>
-      <LanguageName>plpgsql</LanguageName>
-      <RoutineKind>function</RoutineKind>
-      <Cost>100.0</Cost>
-    </routine>
-    <column id="30" parent="22" name="id">
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="19" parent="16" name="users_id_seq">
+      <ObjectId>16450</ObjectId>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="20" parent="16" name="orders">
+      <ObjectId>16469</ObjectId>
+      <StateNumber>605</StateNumber>
+    </table>
+    <table id="21" parent="16" name="persons">
+      <ObjectId>16461</ObjectId>
+      <StateNumber>605</StateNumber>
+    </table>
+    <table id="22" parent="16" name="users">
+      <ObjectId>16452</ObjectId>
+      <StateNumber>588</StateNumber>
+    </table>
+    <column id="23" parent="20" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>587</StateNumber>
-      <DefaultExpression>nextval(&apos;companies_profit_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>605</StateNumber>
+      <DefaultExpression>nextval(&apos;orders_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
-      <SequenceName>companies_profit_id_seq</SequenceName>
+      <SequenceName>orders_id_seq</SequenceName>
     </column>
-    <column id="31" parent="22" name="name">
+    <column id="24" parent="20" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>587</StateNumber>
+      <StateNumber>605</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="32" parent="22" name="year">
+    <column id="25" parent="20" name="person_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>587</StateNumber>
+      <StateNumber>605</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="33" parent="22" name="money_turnover">
-      <Position>4</Position>
-      <DataType>numeric|0s</DataType>
-      <StateNumber>587</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <index id="34" parent="22" name="companies_profit_pkey">
-      <ObjectId>16464</ObjectId>
+    <index id="26" parent="20" name="orders_pkey">
+      <ObjectId>16473</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="35" parent="22" name="companies_profit_pkey">
+    <key id="27" parent="20" name="orders_pkey">
+      <ObjectId>16474</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>orders_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="20" name="orders_person_id_fkey">
+      <ObjectId>16475</ObjectId>
+      <ColNames>person_id</ColNames>
+      <RefTableId>16461</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>persons</RefTableName>
+      <RefKeyName>persons_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="29" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>604</StateNumber>
+      <DefaultExpression>nextval(&apos;persons_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>persons_id_seq</SequenceName>
+    </column>
+    <column id="30" parent="21" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>604</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="31" parent="21" name="persons_pkey">
       <ObjectId>16465</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>companies_profit_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="36" parent="23" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>586</StateNumber>
-      <DefaultExpression>nextval(&apos;countries_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-      <SequenceName>countries_id_seq</SequenceName>
-    </column>
-    <column id="37" parent="23" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <StateNumber>586</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="38" parent="23" name="budget">
-      <Position>3</Position>
-      <DataType>numeric|0s</DataType>
-      <StateNumber>586</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <index id="39" parent="23" name="countries_pkey">
-      <ObjectId>16453</ObjectId>
-      <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="40" parent="23" name="countries_pkey">
-      <ObjectId>16454</ObjectId>
+    <key id="32" parent="21" name="persons_pkey">
+      <ObjectId>16466</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>countries_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>persons_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="41" parent="24" name="id">
+    <column id="33" parent="22" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>577</StateNumber>
-      <DefaultExpression>nextval(&apos;departments_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
-      <SequenceName>departments_id_seq</SequenceName>
+      <SequenceName>users_id_seq</SequenceName>
     </column>
-    <column id="42" parent="24" name="name">
+    <column id="34" parent="22" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>577</StateNumber>
+      <StateNumber>580</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="43" parent="24" name="departments_pkey">
-      <ObjectId>16448</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <column id="44" parent="25" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>576</StateNumber>
-      <DefaultExpression>nextval(&apos;employees_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-      <SequenceName>employees_id_seq</SequenceName>
-    </column>
-    <column id="45" parent="25" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <StateNumber>576</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="46" parent="25" name="department_id">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>576</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="47" parent="26" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>618</StateNumber>
-      <DefaultExpression>nextval(&apos;test_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-      <SequenceName>test_id_seq</SequenceName>
-    </column>
-    <column id="48" parent="26" name="name">
-      <Position>2</Position>
-      <DataType>text|0s</DataType>
-      <StateNumber>618</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="49" parent="26" name="test_pkey">
-      <ObjectId>16480</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="50" parent="26" name="test_pkey">
-      <ObjectId>16481</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>test_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="51" parent="27" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>583</StateNumber>
-      <DefaultExpression>nextval(&apos;next_id&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="52" parent="27" name="name">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <StateNumber>583</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="53" parent="27" name="surname">
+    <column id="35" parent="22" name="surname">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>583</StateNumber>
+      <StateNumber>580</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="27" name="gender">
+    <column id="36" parent="22" name="gender">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>583</StateNumber>
-      <DefaultExpression>true</DefaultExpression>
+      <StateNumber>580</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="55" parent="27" name="users_pkey">
-      <ObjectId>16442</ObjectId>
+    <column id="37" parent="22" name="balance">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>588</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="38" parent="22" name="users_pkey">
+      <ObjectId>16456</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="56" parent="27" name="users_pkey">
-      <ObjectId>16443</ObjectId>
+    <key id="39" parent="22" name="users_pkey">
+      <ObjectId>16457</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <argument id="57" parent="28" name="name">
-      <Position>1</Position>
-      <DataType>varchar|0s</DataType>
-    </argument>
-    <argument id="58" parent="28" name="surname">
-      <Position>2</Position>
-      <DataType>varchar|0s</DataType>
-    </argument>
-    <argument id="59" parent="28" name="gender">
-      <Position>3</Position>
-      <DataType>boolean|0s</DataType>
-    </argument>
-    <argument id="60" parent="28">
-      <ArgumentDirection>R</ArgumentDirection>
-      <DataType>void|0s</DataType>
-    </argument>
-    <argument id="61" parent="29" name="name">
-      <Position>1</Position>
-      <DataType>varchar|0s</DataType>
-    </argument>
-    <argument id="62" parent="29" name="surname">
-      <Position>2</Position>
-      <DataType>varchar|0s</DataType>
-    </argument>
-    <argument id="63" parent="29" name="gender">
-      <Position>3</Position>
-      <DataType>boolean|0s</DataType>
-    </argument>
-    <argument id="64" parent="29">
-      <ArgumentDirection>R</ArgumentDirection>
-      <DataType>void|0s</DataType>
-    </argument>
   </database-model>
 </dataSource>
