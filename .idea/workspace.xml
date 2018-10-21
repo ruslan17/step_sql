@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8992be6f-47c1-4a3a-af51-8508d2906906" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jdbc/TransactionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/lesson_21_10.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4760a96a-651b-4c21-82bf-f31664e97d62.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4760a96a-651b-4c21-82bf-f31664e97d62.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4760a96a-651b-4c21-82bf-f31664e97d62/storage_v2/_src_/database/step_db.0WYijw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4760a96a-651b-4c21-82bf-f31664e97d62/storage_v2/_src_/database/step_db.0WYijw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/step_sql/JDBCExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/step_sql/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/step_sql/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/step_sql/dao/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/step_sql/dao/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/step_sql/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/step_sql/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBCExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc/JDBCExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dml.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/dml.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/functions.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joins.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/joins.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/lesson3.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiply_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/multiply_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/relations.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/relations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql_lesson2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/sql_lesson2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql_lesson2_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/sql_lesson2_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +61,11 @@
     <leaf>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -130,6 +109,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4760a96a-651b-4c21-82bf-f31664e97d62/console_4.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4760a96a-651b-4c21-82bf-f31664e97d62/console.sql" />
         <option value="$PROJECT_DIR$/src/sql/lesson_21_10.sql" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1104,7 +1084,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32767000" />
+    <option name="totallyTimeSpent" value="33012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1121,11 +1101,11 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5577342" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.29847494" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info anchor="right" id="Database" order="3" weight="0.20788912" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1417,7 +1397,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
